@@ -180,6 +180,7 @@ img {
     background-size: cover;
     padding: 188px 0;
     text-align: center;
+    margin: 0 auto;
 }
 
 .hero-section .section-title {
@@ -329,6 +330,15 @@ img {
 .btn.primary {
     transition: background-color var(--transition-slow);
 }
+
+.btn-subscription {
+    padding: 8px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    min-height: 40px;
+}
 /* #endregion */
 
 /* #region Icons */
@@ -376,6 +386,10 @@ img {
     height: 16px;
     width: 16px;
 }
+
+.submit-icon {
+    fill: var(--white);
+}
 /* #endregion */
 
 /* #region Footer */
@@ -421,5 +435,42 @@ img {
 .page-footer, 
 .page-footer .logo .logo-span {
     color: var(--cloud);
+}
+
+.page-footer .subscription-fields {
+    display: flex;
+}
+
+.page-footer .social-info {
+    margin-right: 80px;
+}
+/* #endregion */
+
+/* #region Forms */
+.form-label {
+    display: block;
+    margin-bottom: 16px;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.form-input {
+    padding: 8px 16px;
+    margin-right: 24px;
+    background: var(--navy-blue);
+    width: 264px;
+    border-radius: 4px;
+    border: 1px solid var(--white);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    min-height: 40px;
+    outline: none;
+}
+
+.form-input,
+.form-input::placeholder {
+    color: var(--white);
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.48px;
 }
 /* #endregion */
