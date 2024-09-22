@@ -365,7 +365,8 @@ button {
     transition: background-color var(--transition-slow), border var(--transition-slow);
 }
 
-.btn-close-modal:focus {
+.btn-close-modal:focus,
+.btn-close-modal:hover {
     background-color: var(--ocean);
     border: none;
 }
@@ -429,7 +430,8 @@ button {
     transition: fill var(--transition-slow);
 }
 
-.btn-close-modal:focus .btn-close-modal-icon {
+.btn-close-modal:focus .btn-close-modal-icon,
+.btn-close-modal:hover .btn-close-modal-icon {
     fill: var(--white);
 }
 /* #endregion */
@@ -481,6 +483,7 @@ button {
 
 .page-footer .subscription-form {
     display: flex;
+    gap: 24px;
 }
 
 .page-footer .social-info {
@@ -526,6 +529,7 @@ button {
 }
 
 .modal .form-label {
+    display: block;
     margin-bottom: 4px;
     color: var(--light-slate);
     font-size: 12px;
@@ -536,7 +540,6 @@ button {
 
 .form-input, .form-textarea {
     padding: 8px 16px;
-    margin-right: 24px;
     background: transparent;
     width: 264px;
     border-radius: 4px;
@@ -589,7 +592,7 @@ button {
     align-items: center;
     height: 16px;
     width: 16px;
-    border: 1px solid rgba(46, 47, 66, 0.4); 
+    border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     cursor: pointer;
     transition: background-color var(--transition-slow), border var(--transition-slow), fill var(--transition-slow);
@@ -629,7 +632,7 @@ input[type="checkbox"]:checked + .form-label .checkbox-icon {
     display: flex;
     opacity: 0;
     pointer-events: none;
-    transition: opacity var(--transition-slow);
+    transition: opacity var(--transition-slow), visibility var(--transition-slow);
 }
 
 .backdrop.is-open {
