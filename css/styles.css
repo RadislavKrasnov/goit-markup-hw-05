@@ -600,7 +600,7 @@ button {
 }
 
 input[type="checkbox"]:checked + .form-label > .checkbox {
-    border-color: transparent;
+    border: none;
     background-color: var(--ocean);
     fill: var(--cloud);
 }
