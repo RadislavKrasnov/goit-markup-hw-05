@@ -360,6 +360,7 @@ button {
     position: absolute;
     top: 24px;
     right: 24px;
+    transition: background-color var(--transition-slow);
 }
 
 .btn-close-modal:hover {
@@ -536,6 +537,7 @@ button {
     margin: 0;
     width: 100%;
     color: var(--navy-blue);
+    transition: color var(--transition-slow);
 }
 
 .modal .form-input:focus,
